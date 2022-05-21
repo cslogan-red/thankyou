@@ -1,0 +1,27 @@
+$border-blue: .25rem solid rgb(38, 0, 255);
+$border-radius: .5rem;
+
+.tab__container {
+    margin: 1, 0rem;
+    background-color: #09f3f3;
+    border: $border-blue;
+    border-radius: $border-radius;
+    padding: 2rem;
+    min-height: 95vh;
+    &--header {
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 1rem;
+        &-link, &-link-active {
+            padding: 1rem;
+            margin-right: .25rem;
+            cursor: pointer;
+            background-color: #FFF;
+            border-radius: $border-radius;
+            border: $border-blue;
+            &-active {
+                background-color: red;
+            }
+        }
+    }
+}
