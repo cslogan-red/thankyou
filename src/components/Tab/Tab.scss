@@ -1,6 +1,9 @@
+@import '../../sass/constants.scss';
+
 .tab__body {
-  background-color: #FFF;
-  padding: 2rem;
-  border-radius: .5rem;
-  box-shadow: 1px 1px 1px gray;
+  background-color: $color-white;
+  padding: $padding-normal;
+  border: $color-border-blue;
+  border-radius: $border-radius;
+  box-shadow: $tab-shadow;
 }

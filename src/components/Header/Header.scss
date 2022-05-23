@@ -1,0 +1,12 @@
+@import '../../sass/constants.scss';
+
+.header__container {
+  font-size: $font-size-header-large;
+  color: $color-mid-gray;
+  background-color: $color-white;
+  margin-left: $margin-normal;
+  height: 15%;
+  min-height: 10vh;
+  min-width: 100vw;
+  text-align: left;
+}

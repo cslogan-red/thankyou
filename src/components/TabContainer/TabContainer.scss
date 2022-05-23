@@ -1,27 +1,25 @@
-$border-blue: .25rem solid rgb(38, 0, 255);
-$border-radius: .5rem;
+@import '../../sass/constants.scss';
 
 .tab__container {
-    margin: 1, 0rem;
-    background-color: #09f3f3;
-    border: $border-blue;
-    border-radius: $border-radius;
-    padding: 2rem;
-    min-height: 95vh;
-    &--header {
-        display: flex;
-        flex-direction: row;
-        margin-bottom: 1rem;
-        &-link, &-link-active {
-            padding: 1rem;
-            margin-right: .25rem;
-            cursor: pointer;
-            background-color: #FFF;
-            border-radius: $border-radius;
-            border: $border-blue;
-            &-active {
-                background-color: red;
-            }
-        }
+  margin: $margin-small, 0rem;
+  background-color: $color-aqua-blue;
+  padding: $padding-normal;
+  min-height: 95vh;
+  &--header {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: $margin-small;
+    &-link, &-link-active {
+      padding: $margin-small;
+      margin-right: .25rem;
+      cursor: pointer;
+      background-color: $color-white;
+      border-radius: $border-radius;
+      border: $color-border-blue;
+      &-active {
+        background-color: $color-red;
+        box-shadow: $tab-shadow;
+      }
     }
+  }
 }

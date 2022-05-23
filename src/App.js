@@ -1,26 +1,12 @@
-import React, { useState, useEffect } from 'react';
-import TabContainer from './components/TabContainer/TabContainer';
-import { getTabs } from './services/TabContentService';
+import React from 'react';
+import AppContainer from './components/AppContainer/AppContainer';
 import './App.css';
 
+// top level app component
 function App() {
-  const [tabs, setTabs] = useState([]);
-
-  // fetch tab items
-  useEffect(() => {
-    getTabs()
-      .then(items => {
-        setTabs(items)
-      })
-  }, []);
-
-  const key = `${tabs.length + Math.random()}`;
   return (
-    <div className="App">
-      <TabContainer
-        key={key}
-        tabList={tabs}
-      />
+    <div className="app">
+      <AppContainer />
     </div>
   );
 }
